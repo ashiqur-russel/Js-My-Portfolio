@@ -90,10 +90,14 @@ section .title::after {
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
+  background-image: -webkit-linear-gradient(
+    rgb(212, 56, 56),
+    rgb(239, 80, 48),
+    rgb(200, 90, 47)
+  );
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: crimson;
 }
 .navbar .max-width {
   display: flex;
@@ -188,7 +192,7 @@ section .title::after {
   font-size: 27px;
 }
 .home .home-content .text-2 {
-  font-size: 75px;
+  font-size: 60px;
   font-weight: 600;
   margin-left: -3px;
 }
@@ -225,9 +229,9 @@ section .title::after {
   width: 45%;
 }
 .about .about-content .left img {
-  height: 400px;
+  height: 600px;
   width: 400px;
-  object-fit: cover;
+  object-position: 20px center;
   border-radius: 6px;
 }
 .about .about-content .right {
@@ -447,6 +451,9 @@ section .title::after {
 }
 
 /* contact section styling */
+.contact {
+  background: rgb(141, 135, 135);
+}
 .contact .title::after {
   content: "get in touch";
 }
